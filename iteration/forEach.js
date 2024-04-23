@@ -29,6 +29,13 @@ const myCode = [
   },
 ];
 
-myCode.forEach((item) => {
+// myCode.forEach((item) => {
+//   console.log(item.languageName);
+// });
+
+const values = myCode.forEach((item) => {
   console.log(item.languageName);
+  return item
 });
+
+console.log(values)  // forEach doesn't return anything
