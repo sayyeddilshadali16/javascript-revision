@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        .bg-black {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading">DOM manipulation <span class="display: none">test text</span></h1>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, molestias.</h2>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione perferendis accusantium hic!</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <script>
+        document.getElementById("title").getAttribute("class")
+        document.getElementById("title").setAttribute("class", "test")
+
+        // const title = document.getElementById("title")
+        // title.style.backgroundColor = "red"
+        // title.style.padding = "20px"
+        // title.style.borderRadius = "20px"
+
+        // title.innerHTML
+        // title.textContent // shows all text in the tag
+        // title.innerText // doesn't show content if added css properties
+
+        document.getElementsByClassName("heading")
+
+        document.querySelector("#title")
+        document.querySelector(".heading")
+        document.querySelector("h2")
+
+    </script>
+</body>
+</html>

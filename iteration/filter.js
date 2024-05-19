@@ -1,6 +1,6 @@
 // Filter
 
-// takes callback function it and return according to given condition
+// takes callback function in it and return according to given condition
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
