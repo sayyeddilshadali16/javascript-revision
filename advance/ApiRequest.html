@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Requests</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid white;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>UNSENT</td>
+            <td>Client has been created. open() not called yet.</td>
+        </tr>
+        <tr>
+            <td>OPENED</td>
+            <td>open() has been called.</td>
+        </tr>
+        <tr>
+            <td>HEADERS_RECEIVED</td>
+            <td>send() has been called, and headers and status are available.</td>
+        </tr>
+        <tr>
+            <td>LOADING</td>
+            <td>Downloading; responseText holds partial data.</td>
+        </tr>
+        <tr>
+            <td>DONE</td>
+            <td>The operation is complete.</td>
+        </tr>
+    </table>
+    <script>
+        const requestUrl = "https://api.github.com/users/sayyeddilshadali16"
+        const xhr = new XMLHttpRequest()
+        xhr.open("GET", requestUrl)
+        xhr.onreadystatechange = function(){
+            console.log(xhr.readyState)
+            if(xhr.readyState === 4){
+                const data = JSON.parse(this.responseText)
+                console.log(typeof data)
+                console.log(data.followers)
+            }
+        }
+        xhr.send()
+    </script>
+</body>
+</html>

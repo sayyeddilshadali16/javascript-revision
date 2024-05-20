@@ -62,3 +62,7 @@
 - Task queue
 
 --> callback <--> callback
+
+- XMLHttp request
+
+--> Its methods contains ready state using which requests are made.
