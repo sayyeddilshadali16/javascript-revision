@@ -45,9 +45,9 @@
 --> block the flow of program -> read file sync
 --> dose not block execution -> read file async
 
-* Event loop
+- Event loop
 
-- JavaScript engine
+* JavaScript engine
 
 --> memory heap
 --> call stack - function - function - function - global
@@ -66,3 +66,11 @@
 - XMLHttp request
 
 --> Its methods contains ready state using which requests are made.
+
+- Promises
+
+--> The promises object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+--> Three states of promises
+pending
+fullfilled
+rejected
