@@ -116,3 +116,14 @@ fetch("https://jsonplaceholder.typicode.com/users")
   .catch((error) => {
     console.log(error);
   });
+
+// fetch() is global function which starts the process of fetching a resource from the network, returning a promise which is fulfilled once the reponse is available.
+
+// response = fetch("")
+
+// data:
+// onfulfilled[]
+// onRejection[]
+
+// web browser/node
+// network request ✅ or ❌
