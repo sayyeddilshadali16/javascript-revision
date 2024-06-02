@@ -74,3 +74,8 @@
 pending
 fullfilled
 rejected
+
+- Prototype
+
+-> JavaScript by default has prototypal behavior.
+-> It can be said everything in JavaScript is an object and what properties arary and string gets is from object.
